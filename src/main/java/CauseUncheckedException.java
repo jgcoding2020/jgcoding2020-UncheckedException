@@ -13,7 +13,9 @@ public class CauseUncheckedException {
      * Notice that errors are separate from exceptions. Errors are external to Java and can occur when some external
      * event happens, like running out of computer memory.
      */
-    public void throwUncheckedException(){
-
+    public void throwUncheckedException() throws ArrayIndexOutOfBoundsException{
+        int [] nums = new int[4];
+        for (int i = 0; i < nums.length; i++)
+            nums[i + 1] += 1; 
     }
 }
